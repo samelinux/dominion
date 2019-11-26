@@ -1,0 +1,22 @@
+<html>
+ <meta id="viewport" name="viewport" content="user-scalable=no,width=223,height=427">
+ <head>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="data/cards.js"></script>
+  <script src="js/dominion.js"></script>
+ </head>
+ <body>
+  Seleziona le espansioni che vuoi giocare
+  <div id='expansions' class='withBorder'>
+   <script>generateExpansion();</script>
+  </div>
+  <div id='commands' class='commands'>
+   <input type='button' onclick='generateKingdom()' value='Genera regno'></input>
+  </div>
+  <div id='result' style='display:none'>
+   Buon divertimento!
+   <div id='kingdom' class='withBorder'>
+   </div>
+  </div>
+ </body>
+</html>

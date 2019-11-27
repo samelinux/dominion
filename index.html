@@ -6,6 +6,14 @@
   <script src="js/dominion.js"></script>
  </head>
  <body>
+  Numero di giocatori:
+  <select id='playersCount'>
+   <option>2</option>
+   <option>3</option>
+   <option selected='selected'>4</option>
+   <option>5</option>
+   <option>6</option>
+  </select><br/>
   Seleziona le espansioni che vuoi giocare
   <div id='expansions' class='withBorder'>
    <script>generateExpansion();</script>
@@ -16,6 +24,9 @@
   <div id='result' style='display:none'>
    Buon divertimento!
    <div id='kingdom' class='withBorder'>
+   </div>
+   Se stai giocando con il veto, queste sono le carte aggiuntive:
+   <div id='veto' class='withBorder'>
    </div>
   </div>
  </body>

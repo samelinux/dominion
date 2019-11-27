@@ -13,8 +13,7 @@ function generateExpansion()
   var text=document.createElement("text");
   text.innerHTML=key;
   document.getElementById('expansions').appendChild(text);
-  var br=document.createElement("br");
-  document.getElementById('expansions').appendChild(br);
+  document.getElementById('expansions').appendChild(document.createElement("br"));
  }
  return expansions;
 }
@@ -36,6 +35,7 @@ function generateKingdom()
  if(allCards.length>0)
  {
   document.getElementById('kingdom').innerHTML='';
+  document.getElementById('veto').innerHTML='';
   for(var i=0;i<10;i++)
   {
    var nextCard=rand(0,allCards.length-1);
@@ -43,8 +43,18 @@ function generateKingdom()
    text.innerHTML=allCards[nextCard];
    allCards.splice(nextCard,1);
    document.getElementById('kingdom').appendChild(text);
-   var br=document.createElement("br");
-   document.getElementById('kingdom').appendChild(br);
+   document.getElementById('kingdom').appendChild(document.createElement("br"));
+  }
+  var playersSelector=document.getElementById("playersCount");
+  var playersCount=playersSelector.options[playersSelector.selectedIndex].text;
+  for(var i=0;i<playersCount;i++)
+  {
+   var nextCard=rand(0,allCards.length-1);
+   var text=document.createElement("text");
+   text.innerHTML=allCards[nextCard];
+   allCards.splice(nextCard,1);
+   document.getElementById('veto').appendChild(text);
+   document.getElementById('veto').appendChild(document.createElement("br"));
   }
   document.getElementById('result').style.display='block';
  }

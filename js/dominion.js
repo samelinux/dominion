@@ -46,7 +46,7 @@ function generateKingdom()
    document.getElementById('kingdom').appendChild(document.createElement("br"));
   }
   var playersSelector=document.getElementById("playersCount");
-  var playersCount=playersSelector.options[playersSelector.selectedIndex].text;
+  var playersCount=playersSelector.options[playersSelector.selectedIndex].value;
   for(var i=0;i<playersCount;i++)
   {
    var nextCard=rand(0,allCards.length-1);

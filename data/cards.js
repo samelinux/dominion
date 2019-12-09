@@ -2,7 +2,7 @@
 
 var cards=[];
 
-cards['base']=[
+cards['Base']=[
 'Fossato',
 'Cappella',
 'Sotterraneo',
@@ -29,7 +29,7 @@ cards['base']=[
 'Usuraio',
 'Giardini'];
 
-cards['intrigo']=[
+cards['Intrigo']=[
 'Ballo in maschera',
 'Baraccopoli',
 'Barone',
@@ -56,7 +56,7 @@ cards['intrigo']=[
 'Ponte',
 'Potenziamento'];
 
-cards['seaside']=[
+cards['Seaside']=[
 'Ambasciatore',
 'Avamposto',
 'Avventuriero',
@@ -83,4 +83,32 @@ cards['seaside']=[
 'Molo',
 'Nave fantasma',
 'Nave mercantile'];
+
+cards['Nuovi orizzonti']=[
+'Campo Nomadi',
+'Oasi',
+'Cartografo',
+'Oracolo',
+'Commerciante',
+'Oro dello stolto',
+'Contrattazione',
+'Stalla',
+'Diplomatico',
+'Strada maestra',
+'Duchessa',
+'Sviluppo',
+'Forziere',
+'Terra coltivata',
+'Galleria',
+'Tuttofare',
+'Incrocio',
+'Infame profitto',
+'Ladro gentiluomo',
+'Via della seta',
+'Locanda',
+'Villaggio di frontiera',
+'Macchinazione',
+'Mandarino',
+'Margravio',
+'Mercante di spezie'];
 
